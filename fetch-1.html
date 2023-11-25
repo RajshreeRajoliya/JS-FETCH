@@ -1,0 +1,92 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>omdb</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+        #main{
+            display: grid;
+            align-items: center;
+            justify-content: center;
+          margin-top: 200px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <input type="text" id="name" placeholder="Search Movie">
+    <button id="btn" onclick="fetchdata()">Search</button>
+    <div id="main"> -->
+        <!-- Displaying Movie Of Your Choice -->
+    <!-- </div>
+
+</body>
+</html> -->
+<!-- 
+<script>
+    
+function fetchdata(){
+    var name = document.getElementById("name").value;
+
+var API_Key ="13a4742a";
+fetch(`http://www.omdbapi.com/?apikey=${API_Key}&t=${name}`) 
+.then(function(res){
+    return res.json();
+
+}).then(function(json){
+    console.log(json);
+
+if(json.Error){
+    document.getElementById("main").innerText = "";
+    var errorimg = document.createElement("img");
+    errorimg.setAttribute("src" , "https://media.giphy.com/media/3o6UBpHgaXFDNAuttm/giphy.gif") -->
+   
+    // document.getElementById("main").innerText = "NOT FOUND 404";
+    // document.getElementById("main").append(errorimg);
+   
+// } else {
+//     displayMovie(json);
+// }
+// }).catch(function(error){
+//     console.log("Invalid!");
+// });
+
+// }
+//fetchdata function
+
+
+// function displayMovie(responseData){
+//     document.getElementById("main").innerText = "";
+//     var Poster = document.createElement("img");
+//     Poster.src = responseData.Poster;
+//     var  Title = document.createElement("h2");
+//     Title.innerText = responseData.Title;
+
+    
+    
+//     var Released = document.createElement("h3");
+//     Released.innerText = responseData.Released;
+
+//     var rating = document.createElement("h4");
+//     rating.innerText = responseData.imdbRating;
+
+//     var recommend = document.createElement("h1");
+//     if(rating.innerText >= 5){
+//         recommend.innerText = "RECOMMENDED";
+//         recommend.style.backgroundColor = "red";
+//         recommend.style.color = "white";
+//         document.querySelector("#main").append(  Poster , Title  , Released , rating , recommend);
+//     } else{
+//         document.querySelector("#main").append(  Poster , Title  , Released , rating);
+//     }
+  
+// }
+
+
+// </script>
